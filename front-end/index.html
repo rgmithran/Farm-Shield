@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Farm Shield | Smart Farming Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo"> Farm<span>Shield</span></div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#recommend">Crop Recommendation</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="register.html" class="register-btn">Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Grow Smarter with <span>Farm Shield</span></h1>
+
+            <p>
+                Smart farming starts with the right decision.
+                Analyze soil, check weather conditions,
+                explore market prices and calculate your
+                expected farming profit.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#recommend" class="primary-btn">
+                    Get Crop Recommendation
+                </a>
+
+                <a href="#features" class="secondary-btn">
+                    Explore Features
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div>
+                    <h2>🌾</h2>
+                    <p>Smart Crop Selection</p>
+                </div>
+
+                <div>
+                    <h2>🌦️</h2>
+                    <p>Weather Analysis</p>
+                </div>
+
+                <div>
+                    <h2>💰</h2>
+                    <p>Profit Estimation</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=900"
+                alt="Green agricultural farm"
+            >
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="features">
+        <div class="section-heading">
+            <h2>Our Smart Farming Features</h2>
+            <p>Everything farmers need to make better cultivation decisions.</p>
+        </div>
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+                <div class="feature-icon">🌱</div>
+                <h3>Crop Recommendation</h3>
+                <p>Find suitable crops based on soil nutrients and climate conditions.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🌦️</div>
+                <h3>Weather Analysis</h3>
+                <p>Check temperature, humidity, rainfall and weather conditions.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🧪</div>
+                <h3>Soil Analysis</h3>
+                <p>Analyze soil pH, nitrogen, phosphorus and potassium values.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Market Prices</h3>
+                <p>Explore crop prices and compare different agricultural markets.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3>Profit Calculator</h3>
+                <p>Estimate farming expenses, revenue and expected profit.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📋</div>
+                <h3>Farming History</h3>
+                <p>Save and view previous crop recommendations and calculations.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CROP RECOMMENDATION -->
+    <section class="recommend" id="recommend">
+
+        <div class="section-heading">
+            <h2>Find the Best Crop for Your Land</h2>
+            <p>Enter your soil and climate details to check crop suitability.</p>
+        </div>
+
+        <div class="recommend-container">
+
+            <form id="cropForm">
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label>Location</label>
+                        <input type="text" id="location"
+                            placeholder="Enter your district" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Soil Type</label>
+                        <select id="soilType" required>
+                            <option value="">Select Soil Type</option>
+                            <option>Red Soil</option>
+                            <option>Black Soil</option>
+                            <option>Alluvial Soil</option>
+                            <option>Clay Soil</option>
+                            <option>Sandy Soil</option>
+                            <option>Loamy Soil</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Nitrogen (N)</label>
+                        <input type="number" id="nitrogen"
+                            placeholder="Enter nitrogen value" min="0" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Phosphorus (P)</label>
+                        <input type="number" id="phosphorus"
+                            placeholder="Enter phosphorus value" min="0" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Potassium (K)</label>
+                        <input type="number" id="potassium"
+                            placeholder="Enter potassium value" min="0" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Soil pH</label>
+                        <input type="number" id="ph"
+                            placeholder="Enter soil pH" min="0" max="14"
+                            step="0.1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Temperature (°C)</label>
+                        <input type="number" id="temperature"
+                            placeholder="Enter temperature" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Humidity (%)</label>
+                        <input type="number" id="humidity"
+                            placeholder="Enter humidity" min="0" max="100"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Rainfall (mm)</label>
+                        <input type="number" id="rainfall"
+                            placeholder="Enter rainfall" min="0" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Land Area (Acres)</label>
+                        <input type="number" id="land"
+                            placeholder="Enter land area" min="0.1"
+                            step="0.1" required>
+                    </div>
+
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Get Crop Recommendation
+                </button>
+
+            </form>
+
+            <div id="result" class="result-box">
+                <div class="result-icon">🌾</div>
+                <h3>Your Crop Recommendation</h3>
+                <p>Enter your farm details to view suitable crops.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2>About Farm Shield</h2>
+            <p>
+                Farm Shield is a smart farmer support platform designed
+                to help farmers select suitable crops using soil,
+                weather and agricultural market information.
+                It also helps farmers estimate cultivation expenses
+                and expected profits before starting cultivation.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>🌱 Farm Shield</h2>
+        <p>Smart Decisions Today, Better Harvest Tomorrow.</p>
+        <p>© 2026 Farm Shield. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
