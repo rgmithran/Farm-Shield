@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Crop = require("../models/Crop");
+const Crop = require("../models/crop");
 const jwt = require("jsonwebtoken");
 const User = require("../models/User");
 
